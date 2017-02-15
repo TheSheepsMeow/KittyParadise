@@ -128,14 +128,25 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Create object" sid="200190218251598" type="System">
+                        <action disabled="1" id="-3" name="Create object" sid="200190218251598" type="System">
                             <param id="0" name="Object to create">hitWall</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">ball.X + 50</param>
                             <param id="3" name="Y">Ball.Y</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="730756546323137" type="hitWall">
+                        <action disabled="1" id="-8" name="Set angle" sid="730756546323137" type="hitWall">
                             <param id="0" name="Angle">180</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="219734210130308" type="Ball">
+                            <param id="0" name="Animation">&quot;Hit&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="629882883457583" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="537703463980804" type="Ball">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -150,14 +161,25 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Create object" sid="246413177447478" type="System">
+                        <action disabled="1" id="-3" name="Create object" sid="246413177447478" type="System">
                             <param id="0" name="Object to create">hitWall</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">ball.X -50</param>
                             <param id="3" name="Y">Ball.Y</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="713079527539091" type="hitWall">
+                        <action disabled="1" id="-8" name="Set angle" sid="713079527539091" type="hitWall">
                             <param id="0" name="Angle">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="259936963146048" type="Ball">
+                            <param id="0" name="Animation">&quot;Hit&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="962914212463919" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="416548836393555" type="Ball">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -168,14 +190,25 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Create object" sid="259990527937367" type="System">
+                        <action disabled="1" id="-3" name="Create object" sid="259990527937367" type="System">
                             <param id="0" name="Object to create">hitWall</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="X">Ball.X</param>
                             <param id="3" name="Y">Ball.Y - 50</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="255553854949924" type="hitWall">
+                        <action disabled="1" id="-8" name="Set angle" sid="255553854949924" type="hitWall">
                             <param id="0" name="Angle">90</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="538697217554032" type="Ball">
+                            <param id="0" name="Animation">&quot;Hit&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="818804396611304" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="190094530763216" type="Ball">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -188,6 +221,13 @@
                             <actions>
                                 <action id="4" name="Set animation" sid="612671415931405" type="Ball">
                                     <param id="0" name="Animation">&quot;Squash&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="578898707825717" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="142345704598481" type="Ball">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -207,13 +247,14 @@
                             <param id="0" name="Width">lerp(Ball.Width,67,0.2)</param>
                             <param id="1" name="Height">lerp(Ball.Height,67,0.2)</param>
                         </action>
-                        <action id="0" name="Spawn another object" sid="894925185010708" type="Ball">
+                        <action disabled="1" id="0" name="Spawn another object" sid="894925185010708" type="Ball">
                             <param id="0" name="Object">BallTrail</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">0</param>
                         </action>
                     </actions>
                 </event-block>
+                <comment>GJ: Changed from creating a new object to switching animation. Flash effect is white sprite with opacity changes.</comment>
                 <event-block sid="235332562497992">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="398037232644524" type="Pulse">
@@ -226,28 +267,35 @@
                             <param id="1" name="Angle">Tracker.Angle</param>
                             <param id="2" name="Image point">0</param>
                         </action>
-                        <action id="0" name="Spawn another object" sid="296992985953842" type="Ball">
+                        <action disabled="1" id="0" name="Spawn another object" sid="296992985953842" type="Ball">
                             <param id="0" name="Object">ballHit</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="644365015404573" type="Ball">
+                            <param id="0" name="Animation">&quot;Hit&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="604684805749510" type="bgFlash">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="873898289653140" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="879734557637578" type="Ball">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="824923568662809" type="bgFlash">
+                            <param id="0" name="Opacity">0</param>
                         </action>
                     </actions>
                     <sub-events>
                         <event-block sid="512292162850136">
                             <conditions />
                             <actions>
-                                <action id="-28" name="Set effect parameter" sid="164274622876496" type="bgFlash">
-                                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
-                                    <param id="1" name="Parameter index">2</param>
-                                    <param id="2" name="Value">200</param>
-                                </action>
                                 <action id="-16" name="Wait" sid="350109663390581" type="System">
                                     <param id="0" name="Seconds">0.1</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="498729869216911" type="bgFlash">
-                                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
-                                    <param id="1" name="Parameter index">2</param>
-                                    <param id="2" name="Value">100</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -525,6 +573,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>GJ: placed strobes in the BG</comment>
                 <event-block sid="700257578568695">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="537528183892963" type="System" />
@@ -542,9 +591,9 @@
                             <actions>
                                 <action id="-3" name="Create object" sid="676698057056977" type="System">
                                     <param id="0" name="Object to create">strobeLight</param>
-                                    <param id="1" name="Layer">&quot;HUD/UI&quot;</param>
+                                    <param id="1" name="Layer">&quot;Bg&quot;</param>
                                     <param id="2" name="X">loopindex * 120</param>
-                                    <param id="3" name="Y">1114</param>
+                                    <param id="3" name="Y">WindowHeight</param>
                                 </action>
                                 <action id="5" name="Set frame" sid="337914079013564" type="strobeLight">
                                     <param id="0" name="Frame number">random(0,4)</param>
@@ -925,18 +974,18 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="436750310915438" title="Group5">
+        <event-group description="" sid="436750310915438" title="particle trail on ball">
             <sub-events>
-                <event-block sid="890958889827256">
-                    <conditions />
-                    <actions />
-                </event-block>
-                <event-block sid="136714500653426">
-                    <conditions />
-                    <actions />
-                </event-block>
                 <event-block sid="719255665289719">
-                    <conditions />
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="605000978666156" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="890958889827256">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="429720844427218" type="System" />
+                    </conditions>
                     <actions />
                 </event-block>
             </sub-events>
