@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>KittyParadise_V4</name>
+    <name>Kitty Paradise</name>
     <description></description>
-    <version>0.2</version>
+    <version>0.3</version>
     <author>The Sheep&apos;s Meow</author>
-    <author-email>community@thesheepsmeow.com</author-email>
-    <author-website>http://www.thesheepsmeow.com</author-website>
+    <author-email>games@thesheepsmeow.com</author-email>
+    <author-website>http://www.thesheepsmeow.com/html5</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>23900</saved-with-version>
