@@ -469,7 +469,7 @@
                 </instance>
                 <instance type="collect" uid="22">
                     <properties>
-                        <rate>50</rate>
+                        <rate>5</rate>
                         <spray-cone>360</spray-cone>
                         <type>One-shot</type>
                         <initial-particle-properties></initial-particle-properties>

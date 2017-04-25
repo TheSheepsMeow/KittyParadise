@@ -168,7 +168,7 @@
                 </instance>
                 <instance type="DeathParticle" uid="18">
                     <properties>
-                        <rate>45</rate>
+                        <rate>5</rate>
                         <spray-cone>360</spray-cone>
                         <type>One-shot</type>
                         <initial-particle-properties></initial-particle-properties>

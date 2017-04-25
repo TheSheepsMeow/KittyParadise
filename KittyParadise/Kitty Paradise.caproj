@@ -8,7 +8,7 @@
     <author-website>http://www.thesheepsmeow.com/html5</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
-    <saved-with-version>23900</saved-with-version>
+    <saved-with-version>24400</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
@@ -42,11 +42,11 @@
     <first-layout>Loader</first-layout>
     <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
-        <prop name="Clear background">Yes</prop>
+        <prop name="Clear background">No</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Progress bar only</prop>
+        <prop name="Loader style">Nothing (not recommended)</prop>
         <prop name="Orientations">Landscape</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>

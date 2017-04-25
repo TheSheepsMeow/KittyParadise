@@ -174,7 +174,7 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-16" name="Set opacity" sid="604684805749510" type="bgFlash">
-                            <param id="0" name="Opacity">100</param>
+                            <param id="0" name="Opacity">50</param>
                         </action>
                         <action id="-16" name="Wait" sid="873898289653140" type="System">
                             <param id="0" name="Seconds">0.1</param>
@@ -243,7 +243,7 @@
                                     <param id="0" name="Folder">0</param>
                                     <param id="1" name="Audio file name">choose(&quot;Kitty Paradise BGM&quot;, &quot;Other Kitten Paradise song&quot;)</param>
                                     <param id="3" name="Loop">0</param>
-                                    <param id="4" name="Volume">-10</param>
+                                    <param id="4" name="Volume">0</param>
                                     <param id="2" name="Tag (optional)">&quot;ost1&quot;</param>
                                 </action>
                             </actions>
@@ -261,7 +261,7 @@
                             <param id="0" name="Folder">0</param>
                             <param id="1" name="Audio file name">choose(&quot;Kitty Paradise BGM&quot;, &quot;Other Kitten Paradise song&quot;)</param>
                             <param id="3" name="Loop">0</param>
-                            <param id="4" name="Volume">-10</param>
+                            <param id="4" name="Volume">0</param>
                             <param id="2" name="Tag (optional)">&quot;ost1&quot;</param>
                         </action>
                     </actions>
@@ -285,7 +285,7 @@
                             <param id="0" name="Object to create">Collectible</param>
                             <param id="1" name="Layer">&quot;Midground&quot;</param>
                             <param id="2" name="X">random(30,600)</param>
-                            <param id="3" name="Y">random(100,650)</param>
+                            <param id="3" name="Y">random(100,450)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -378,7 +378,7 @@
                                     <param id="0" name="Folder">0</param>
                                     <param id="1" name="Audio file name">choose(&quot;Jess Meow 1&quot;,&quot;Jess Meow 2&quot;, &quot;Rebeca Cat 1&quot;, &quot;Rebeca Cat 4&quot;)</param>
                                     <param id="3" name="Loop">0</param>
-                                    <param id="4" name="Volume">-5</param>
+                                    <param id="4" name="Volume">-15</param>
                                     <param id="2" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
@@ -881,6 +881,7 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">1</param>
                         </condition>
+                        <condition id="-9" name="Is visible" sid="358005122429108" type="menuButtonHome" />
                     </conditions>
                     <actions>
                         <action id="-16" name="Wait" sid="853665625111167" type="System">
