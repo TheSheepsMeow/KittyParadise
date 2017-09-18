@@ -11,26 +11,26 @@
                     </conditions>
                     <actions>
                         <action id="5" name="Check item exists" sid="397838410951743" type="LocalStorage">
-                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                            <param id="0" name="Key">&quot;highScore_kittyparadise&quot;</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="398589395756879">
                     <conditions>
                         <condition id="9" name="On item exists" sid="836837232843794" type="LocalStorage">
-                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                            <param id="0" name="Key">&quot;highScore_kittyparadise&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="1" name="Get item" sid="335576755580372" type="LocalStorage">
-                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                            <param id="0" name="Key">&quot;highScore_kittyparadise&quot;</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="851039744018488">
                     <conditions>
                         <condition id="1" name="On item get" sid="812282868518066" type="LocalStorage">
-                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                            <param id="0" name="Key">&quot;highScore_kittyparadise&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -43,7 +43,7 @@
                 <event-block sid="275912304314346">
                     <conditions>
                         <condition id="10" name="On item missing" sid="184973407151360" type="LocalStorage">
-                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                            <param id="0" name="Key">&quot;highScore_kittyparadise&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -80,7 +80,7 @@
                             <param id="1" name="Value">score</param>
                         </action>
                         <action id="0" name="Set item" sid="755320070059739" type="LocalStorage">
-                            <param id="0" name="Key">&quot;highScore_key&quot;</param>
+                            <param id="0" name="Key">&quot;highScore_kittyparadise&quot;</param>
                             <param id="1" name="Value">highScore</param>
                         </action>
                     </actions>

@@ -350,7 +350,7 @@
                 <event-block sid="830696535460237">
                     <conditions>
                         <condition id="17" name="On tap object" sid="190550425516933" type="Touch">
-                            <param id="0" name="Object">ad</param>
+                            <param id="0" name="Object">moregames</param>
                         </condition>
                     </conditions>
                     <actions>
