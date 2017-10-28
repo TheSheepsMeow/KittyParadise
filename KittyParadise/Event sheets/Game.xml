@@ -402,12 +402,41 @@
                             <param id="2" name="X">302</param>
                             <param id="3" name="Y">261</param>
                         </action>
+                        <action id="4" name="Set animation" sid="675469919991824" type="Ball">
+                            <param id="0" name="Animation">&quot;Hit&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="717464898510429" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="336444699240048" type="Ball">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="464731327616098" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="656906240943611" type="Ball">
+                            <param id="0" name="Animation">&quot;Hit&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="848601522317856" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="214875665606195" type="Ball">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="765819351651649" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
                         <action id="-9" name="Set value" sid="824551062090800" type="System">
                             <param id="0" name="Variable">inPlay</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
+                <comment></comment>
                 <event-block sid="796188657764617">
                     <conditions>
                         <condition id="-11" name="For Each" sid="524821927515720" type="System">

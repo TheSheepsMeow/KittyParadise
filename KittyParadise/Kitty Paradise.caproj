@@ -2,7 +2,7 @@
 <c2project>
     <name>Kitty Paradise</name>
     <description></description>
-    <version>0.4</version>
+    <version>0.5</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>games@thesheepsmeow.com</author-email>
     <author-website>http://www.thesheepsmeow.com/html5</author-website>
@@ -23,6 +23,7 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -300,26 +301,18 @@
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="806273737575859" speed="2">
                     <frame duration="1" hotspotX="0.501953" hotspotY="0.501085" original-source="C:\Users\Pitchfork\Desktop\bg_handsGround (1).png">
                         <collision-poly>
-                            <point x="0.137662" y="0.155882" />
-                            <point x="0.5" y="0.0441176" />
-                            <point x="0.91039" y="0.101471" />
-                            <point x="0.933766" y="0.5" />
-                            <point x="0.879221" y="0.863235" />
-                            <point x="0.5" y="0.788235" />
-                            <point x="0.0831169" y="0.905882" />
-                            <point x="0.0558442" y="0.5" />
+                            <point x="0" y="0.27115" />
+                            <point x="1" y="0.27115" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.498047" hotspotY="0.501085">
                         <collision-poly>
-                            <point x="0.944156" y="0.5" />
-                            <point x="0.916883" y="0.905882" />
-                            <point x="0.5" y="0.788235" />
-                            <point x="0.120779" y="0.863235" />
-                            <point x="0.0662338" y="0.5" />
-                            <point x="0.0896104" y="0.101471" />
-                            <point x="0.5" y="0.0441176" />
-                            <point x="0.862338" y="0.155882" />
+                            <point x="0" y="0.27115" />
+                            <point x="1" y="0.27115" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -470,7 +463,18 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="589602419980006" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\sheeps.png" />
+                    <frame duration="1" hotspotX="0.502857" hotspotY="0.502857" original-source="D:\MEOW\SlothFlip\Sloth Flip\Animations\thesheepsmeow\Default\000.png">
+                        <collision-poly>
+                            <point x="0.255556" y="0.255556" />
+                            <point x="0.5" y="0.36" />
+                            <point x="0.644444" y="0.355556" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.697778" y="0.697778" />
+                            <point x="0.5" y="0.691111" />
+                            <point x="0.284444" y="0.715556" />
+                            <point x="0.0177778" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -596,6 +600,37 @@
                             <point x="0.927734" y="0.694215" />
                             <point x="0.5" y="1" />
                             <point x="0.0507813" y="0.785124" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="textInstructions" sid="653278018820891">
+            <plugin id="Spritefont2" />
+            <behaviors>
+                <behavior-type name="Fade" sid="408048705729688">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="489391427498629">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Pitchfork\Desktop\Sprite Fonts\SpriteFont_FiraMono_Regular_(36)_[0,0,0,0]_24x41.png" />
+        </object-type>
+        <object-type name="OutsideLabel_TheSheepsMeow_whitestroke" sid="533364910251088">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="367535905989641" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\brian\Desktop\The Shop&apos;s Meow\Outside label_TheSheepsMeow_whitestroke.png">
+                        <collision-poly>
+                            <point x="0.255556" y="0.255556" />
+                            <point x="0.5" y="0.36" />
+                            <point x="0.644444" y="0.355556" />
+                            <point x="0.986667" y="0.5" />
+                            <point x="0.697778" y="0.697778" />
+                            <point x="0.5" y="0.691111" />
+                            <point x="0.284444" y="0.715556" />
+                            <point x="0.0177778" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
